@@ -1,0 +1,10 @@
+14:23:06 **** Incremental Build of configuration Debug for project mp157_CM4 ****
+make -j8 all 
+arm-none-eabi-size   mp157_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10944	     20	   1572	  12536	   30f8	mp157_CM4.elf
+Finished building: default.size.stdout
+ 
+
+14:23:06 Build Finished. 0 errors, 0 warnings. (took 218ms)
+
