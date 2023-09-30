@@ -18,9 +18,8 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "usart.h"
 #include "gpio.h"
-#include "stm32mp1xx_hal.h"
-#include "driver_led.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -66,7 +65,7 @@ void SystemClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-  static uint32_t sys_freq = 0; // 定义一个全局变量获取系统时钟值，验证配置的时钟是否正确
+  static uint32_t sys_freq = 0; // 暮沤職盲拧聣膹偶??盲赂艦暮聟篓膹偶??暮聫聵茅聡聫膷聨藝暮聫聳莽艂钮莽钮聼膰聴艣茅聮聼暮聙藕膹藕聦茅艦聦膷呕聛茅聟聧莽藵沤莽職聞膰聴艣茅聮聼膰聵呕暮聬艢膰颅艁膹偶??
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -90,10 +89,10 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-
+  MX_UART4_Init();
   /* USER CODE BEGIN 2 */
-  DemoLedInit(); // 自定义引脚初始化
-  sys_freq = HAL_RCC_GetSystemCoreClockFreq(); // 调用库函数获取系统时钟频率
+  DemoLedInit(); // 膷聡艦暮沤職盲拧聣暮藕聲膷聞職暮聢聺暮搂聥暮聦聳
+  sys_freq = HAL_RCC_GetSystemCoreClockFreq(); // 膷掳聝莽聰篓暮艧聯暮聡藵膰聲掳膷聨藝暮聫聳莽艂钮莽钮聼膰聴艣茅聮聼茅藰聭膹偶??
 
   /* USER CODE END 2 */
 
@@ -104,7 +103,21 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  LedBlinking(); // LED 闪烁
+	  LedBlinking(); // LED 茅聴艦莽聝聛
+	  Key1Polling();
+
+	  printf("=========This is printf test=========\n\r");
+	  printf("test char = %c,%c\n\r", 'H', 'c');
+	  printf("test string1 = %s\n\r", "www.100ask.net");//中文打印需要将文件编码改为 UTF-8,但会导致注释乱码
+	  //printf("test string2 = %s\n\r", "深圳百问网科技有限公司");
+	  printf("test decimal1 number = %d\n\r", 123456);
+	  printf("test decimal2 number = %d\n\r", -123456);
+	  printf("test hex1 number = 0x%x\n\r", 0x123456);
+	  printf("test hex2 number = 0x%08x\n\r", 0x123456);
+	  printf("test float = %.5f\n\r", 3.1415);
+	  printf("test double = %.10lf\n\r", 3.141592653);
+
+	  HAL_Delay(2000);
   }
   /* USER CODE END 3 */
 }

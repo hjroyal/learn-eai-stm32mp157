@@ -1,5 +1,5 @@
 Drivers/STM32MP1xx_HAL_Driver/stm32mp1xx_hal_exti.o: \
- D:/Coding/c/learn-STM32MP157-M4/mp157/Drivers/STM32MP1xx_HAL_Driver/Src/stm32mp1xx_hal_exti.c \
+ D:/Coding/AI/learn-eai-stm32mp157/mp157/Drivers/STM32MP1xx_HAL_Driver/Src/stm32mp1xx_hal_exti.c \
  ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal.h \
  ../Core/Inc/stm32mp1xx_hal_conf.h \
  ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_rcc.h \
@@ -21,7 +21,9 @@ Drivers/STM32MP1xx_HAL_Driver/stm32mp1xx_hal_exti.o: \
  ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_mdma.h \
  ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_cortex.h \
  ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_pwr.h \
- ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_pwr_ex.h
+ ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_pwr_ex.h \
+ ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_uart.h \
+ ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_uart_ex.h
 ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal.h:
 ../Core/Inc/stm32mp1xx_hal_conf.h:
 ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_rcc.h:
@@ -44,3 +46,5 @@ Drivers/STM32MP1xx_HAL_Driver/stm32mp1xx_hal_exti.o: \
 ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_cortex.h:
 ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_pwr.h:
 ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_pwr_ex.h:
+../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_uart.h:
+../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_uart_ex.h:

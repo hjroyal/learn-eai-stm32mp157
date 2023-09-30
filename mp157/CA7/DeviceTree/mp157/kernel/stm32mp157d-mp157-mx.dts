@@ -53,6 +53,13 @@
 
 &pinctrl {
 
+	m4_uart4_pins_mx: m4_uart4_mx-0 {
+		pins {
+			pinmux = <STM32_PINMUX('A', 11, RSVD)>, /* UART4_RX */
+					 <STM32_PINMUX('A', 12, RSVD)>; /* UART4_TX */
+		};
+	};
+
 	/* USER CODE BEGIN pinctrl */
 	/* USER CODE END pinctrl */
 };
@@ -106,6 +113,15 @@
 
 	/* USER CODE BEGIN m4_dma2 */
 	/* USER CODE END m4_dma2 */
+};
+
+&m4_uart4{
+	pinctrl-names = "default";
+	pinctrl-0 = <&m4_uart4_pins_mx>;
+	status = "okay";
+
+	/* USER CODE BEGIN m4_uart4 */
+	/* USER CODE END m4_uart4 */
 };
 
 &mdma1{

@@ -5,12 +5,15 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../DemoDriver/driver_key.c \
 ../DemoDriver/driver_led.c 
 
 OBJS += \
+./DemoDriver/driver_key.o \
 ./DemoDriver/driver_led.o 
 
 C_DEPS += \
+./DemoDriver/driver_key.d \
 ./DemoDriver/driver_led.d 
 
 
@@ -21,7 +24,7 @@ DemoDriver/%.o DemoDriver/%.su DemoDriver/%.cyclo: ../DemoDriver/%.c DemoDriver/
 clean: clean-DemoDriver
 
 clean-DemoDriver:
-	-$(RM) ./DemoDriver/driver_led.cyclo ./DemoDriver/driver_led.d ./DemoDriver/driver_led.o ./DemoDriver/driver_led.su
+	-$(RM) ./DemoDriver/driver_key.cyclo ./DemoDriver/driver_key.d ./DemoDriver/driver_key.o ./DemoDriver/driver_key.su ./DemoDriver/driver_led.cyclo ./DemoDriver/driver_led.d ./DemoDriver/driver_led.o ./DemoDriver/driver_led.su
 
 .PHONY: clean-DemoDriver
 

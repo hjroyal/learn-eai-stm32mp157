@@ -21,7 +21,9 @@ DemoDriver/driver_led.o: ../DemoDriver/driver_led.c \
  ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_mdma.h \
  ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_cortex.h \
  ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_pwr.h \
- ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_pwr_ex.h
+ ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_pwr_ex.h \
+ ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_uart.h \
+ ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_uart_ex.h
 ../DemoDriver/driver_led.h:
 ../Core/Inc/main.h:
 ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal.h:
@@ -46,3 +48,5 @@ DemoDriver/driver_led.o: ../DemoDriver/driver_led.c \
 ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_cortex.h:
 ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_pwr.h:
 ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_pwr_ex.h:
+../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_uart.h:
+../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_uart_ex.h:

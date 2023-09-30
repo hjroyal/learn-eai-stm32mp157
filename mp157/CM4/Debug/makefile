@@ -62,8 +62,8 @@ all: main-build
 main-build: mp157_CM4.elf secondary-outputs
 
 # Tool invocations
-mp157_CM4.elf mp157_CM4.map: $(OBJS) $(USER_OBJS) D:\Coding\c\learn-STM32MP157-M4\mp157\CM4\STM32MP157DACX_RAM.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "mp157_CM4.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\Coding\c\learn-STM32MP157-M4\mp157\CM4\STM32MP157DACX_RAM.ld" --specs=nosys.specs -Wl,-Map="mp157_CM4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+mp157_CM4.elf mp157_CM4.map: $(OBJS) $(USER_OBJS) D:\Coding\AI\learn-eai-stm32mp157\mp157\CM4\STM32MP157DACX_RAM.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "mp157_CM4.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\Coding\AI\learn-eai-stm32mp157\mp157\CM4\STM32MP157DACX_RAM.ld" --specs=nosys.specs -Wl,-Map="mp157_CM4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

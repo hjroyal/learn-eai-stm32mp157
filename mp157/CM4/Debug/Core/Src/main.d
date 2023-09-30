@@ -21,8 +21,9 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_cortex.h \
  ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_pwr.h \
  ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_pwr_ex.h \
- ../Core/Inc/gpio.h ../Core/Inc/main.h \
- D:/Coding/c/learn-STM32MP157-M4/mp157/CM4/DemoDriver/driver_led.h
+ ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_uart.h \
+ ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_uart_ex.h \
+ ../Core/Inc/usart.h ../Core/Inc/main.h ../Core/Inc/gpio.h
 ../Core/Inc/main.h:
 ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal.h:
 ../Core/Inc/stm32mp1xx_hal_conf.h:
@@ -46,6 +47,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_cortex.h:
 ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_pwr.h:
 ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_pwr_ex.h:
-../Core/Inc/gpio.h:
+../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_uart.h:
+../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_uart_ex.h:
+../Core/Inc/usart.h:
 ../Core/Inc/main.h:
-D:/Coding/c/learn-STM32MP157-M4/mp157/CM4/DemoDriver/driver_led.h:
+../Core/Inc/gpio.h:
